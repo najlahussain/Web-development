@@ -1,0 +1,16 @@
+{
+  "name": "najla_class_7",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": "./index.js",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "najla_class_7": "^1.0.0",
+    "najla_project00_calculator": "^1.0.0"
+  }
+}
