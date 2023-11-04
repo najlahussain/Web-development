@@ -1,0 +1,39 @@
+extends base.pug
+
+block scripts 
+    script(src='../static/script.js')
+block style 
+    style 
+        include ../static/style.css
+block content 
+    section#introSection
+        div Welcome to coding heaven
+        div Become a professional developer with the comfort of your home
+    section#aboutSection
+        h2 About Us 
+        div.cardSection 
+            div.card 
+                h3 Our Mission 
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam sed corporis iste quia possimus. Est placeat ut, odio numquam quibusdam dolor ad ab fugiat vel repellendus! Deserunt itaque deleniti accusamus.
+            div.card
+                h3 Our Team 
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam sed corporis iste quia possimus. Est placeat ut, odio numquam quibusdam dolor ad ab fugiat vel repellendus! Deserunt itaque deleniti accusamus.
+            div.card
+                h3 Our Clients
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam sed corporis iste quia possimus. Est placeat ut, odio numquam quibusdam dolor ad ab fugiat vel repellendus! Deserunt itaque deleniti accusamus.
+    section#courseSection
+        h2 We offer courses for the following technologies
+        div.courseImage 
+            img(src = '../static/logos/EX.png', alt='express js')
+            img(src = '../static/logos/TS.png', alt='typescript')
+            img(src = '../static/logos/HTML.png', alt='html 5')
+            img(src = '../static/logos/React.png', alt='react js')
+            img(src = '../static/logos/JS.png.jpeg', alt='javascript')
+            img(src = '../static/logos/NEXT.png', alt='next js')
+            img(src = '../static/logos/MDB.png', alt='mongodb')
+            img(src = '../static/logos/NODE.png', alt='node js')
+            img(src = '../static/logos/TW.png', alt='tailwind')
+    section#back
+        div
+            a(href="/")
+                img(src = '../static/top.png', alt='back to top')

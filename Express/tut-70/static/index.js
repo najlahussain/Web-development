@@ -1,0 +1,1 @@
+console.log("any code for static files");

@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Nunito:wght@300&family=Roboto:wght@400;700&display=swap');
-/*CSS reset*/
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Nunito:wght@300&family=Roboto:wght@400;700&family=Young+Serif&display=swap');
+
 *{
     margin: 0px;
     padding: 0px;
@@ -7,13 +7,12 @@
 
 /* CSS variables */
 :root{
-    /* --navebar-heigth: 135px; */
     --navbar-font: 'Nunito', sans-serif;
 }
 #navbar{
     display: flex;
     align-items: center;
-    position: relative;
+    position: sticky;
 }
 #navbar::before{
     content: "";
@@ -62,27 +61,27 @@
     align-items: center;
     justify-content: center;
     padding: 3px 200px;
-    height: 400px;
-    /* position: relative; */
+    height: 563px;
+    /* border: 2px solid brown; */
 }
 
 #home::before{
     content: "";
     background: url('../img/background.jpg') no-repeat center center/cover;
     position: absolute;
+    top: 0px;   
     height: 100%;
     width: 100%;
     z-index: -2;
     opacity: 0.89;
 }
-
 .h-primary{
     font-size: 2.8rem;
     padding: 20px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Inclusive Sans', sans-serif;
 }
 .h-secondary{
-    font-size: 2.0rem;
+    font-size: 1.8rem;
     padding: 20px;
     font-family: 'Roboto', sans-serif;
 }
@@ -105,16 +104,128 @@
     font-size: 1.2rem;
     cursor: pointer;
 }
-#services-container{
-
-}
+ #services-container{
+    margin-top:50px;
+} 
 #services{
-    margin: 34px;
+    margin: 40px;
     display: flex;
+    /* margin-top: 130px; */
 }
 #services .box{
     border: 2px solid brown;
+    /* box-shadow: 2px grey; */
+    height: 350px;
+    margin: 0px 20px;
+    display: block;
+    padding: 34px;   
+    background-color: rgb(250, 241, 241);
+    border-radius: 15px;
 }
 #services .box img{
-    height: 160px;
+    height: 200px;
+    margin: auto;
+    display: block;
+}
+#services .box p{
+    margin: auto;
+    display: block;
+    text-align: center;
+    font-family:var(--navbar-font);
+}
+#deals-container {
+    display: flex;
+    position: relative;
+    margin: 50px 0px;
+    align-items: center;
+    width: 100%;
+    height : 400px;
+}
+#deals-container::before {
+    content : "";
+    position: absolute;
+    background: url("../img/deal2.webp") no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+}
+.contact-container {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   border-radius: 20px;
+   border: 2px solid brown;
+   width : 1000px;
+   height: 550px;
+   margin: auto;
+   align-items: center;
+   background-color: rgb(250, 241, 241);
+}
+.form-group {
+    padding: 10px;
+    font-family: 'Inclusive Sans', sans-serif;
+    /* align-self: right; */
+}
+ .form-group input {
+    display: block;
+    float: right;
+    width: 300px;
+    height : 20px;
+} 
+#b1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about-container{
+    display: flex;
+    flex-direction: row;
+    /* position: relative; */
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.left{
+    /* border: 2px solid red; */
+    background-color: brown;
+    color: white;
+    width: 30%;
+    /* height: 300px; */
+    padding: 100px;
+    text-orientation : sideways;
+}
+.a-center{
+    /* border: 2px solid red; */
+    background-color: rgb(250, 241, 241);
+    width: 60%;
+    /* height: 300px; */
+    padding: 80px;
+}
+.right{
+    /* border: 2px solid red; */
+    background-color: black;
+    width: 10%;
+    padding: 20px;
+    height: 300px;
+}
+footer {
+    display: flex;
+    background-color: black;
+    position: relative; 
+    width: 100%;
+    height: 100px;
+    margin-top: 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer p{
+    color: white;
+}
+textarea{
+    margin: 10px 0px;
+    padding: 10px;
+    height: 180px;
+    width: 400px;
+    display: block;
 }

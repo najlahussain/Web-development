@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#{title}</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="about">About Us</a></li>
+        <li><a href="services">Services</a></li>
+    </ul>
+    <!-- sending variables to pug template -->
+    
+    <div class = 'container'>
+        <h2>Register Here</h2>
+        <form action="/" method="post" id = "contact">
+            <input type="text" class = "input" id = "name" name = "name" placeholder="Enter name here">
+            <input type="text" class = "input" id = "phone_no" name = "phone_no" placeholder="Enter phone number here">
+            <textarea name="address" id="address" cols="30" rows="10"></textarea>
+            <button id = "btn">Submit</button>
+        </form>
+        <!-- <p>#{content}</p> -->
+    </div>
+    
+    <div id = 'about'>About Us</div>
+    <div id = 'services'>Services</div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+.counter-container{
+    /* background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+.counter-container button{
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 20px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+.counter-container h1{
+    margin-left: 10px;
+}
+
+.counter-container button:hover{
+    background-color: aquamarine;
+}

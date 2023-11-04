@@ -1,0 +1,131 @@
+*{
+    padding : 0;
+    margin : 0;
+    box-sizing: border-box;
+}
+#navbar{
+    display : flex;
+    flex-direction : row;
+    background-color : white;
+}
+#navbar img{
+    height: 60px;
+    width: 20%;
+}
+#navbar ul{
+    display : flex;
+    flex-direction : row;
+}
+#navbar li{
+    list-style : none;
+    padding : 20px 30px;
+}
+#navbar li a{
+    text-decoration: none;
+    color : black;
+    font-family : 'Courier New', Courier, monospace;
+    font-weight : bolder;
+    font-size : 1.2rem;
+    padding: 20px 0px;
+}
+
+#navbar li a:hover{
+    color : green;
+}
+#introSection::before{
+    content: "";
+    background: center / cover no-repeat url("../static/bg.jpg");/*cover means cover the whole section*/
+    position: absolute;
+    top: 0px; 
+    right: 0px; 
+    bottom: 0px; 
+    left: 0px; 
+    z-index: -1;
+    opacity: 0.9;
+    height: 450px;
+}
+
+#introSection{
+    display: flex;
+    height : 400px;
+    /* background-color: aquamarine; */
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    flex-direction: column;
+}
+
+#courseSection{
+    display: block;
+    height : 400px;
+    background-color :white;
+    color: black;
+    font-size: 1.5rem;
+}
+#courseSection h2{
+    font-size: 1.5rem;
+    padding: 20px;
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+}
+.courseImage{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.courseImage img{
+    margin: 5px 10px;
+    height: 80px;
+    width: auto;
+}
+#aboutSection{
+    display: block;
+    height : 400px;
+}
+#aboutSection h2{
+    color: black;
+    text-align: center;
+    padding-top: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.cardSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    color : black;
+    height: 180px;
+    margin : 22px;
+    padding: 10px;
+    background-color: rgb(212, 211, 211);
+    border-radius: 10px;
+    width: 25%;
+    border: 1px solid #ccc;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19),0 6px 6px rgba(0,0,0,0.23);
+}
+#aboutSection .card h3,p{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+#back div{
+    /* background-color: aqua; */
+    height: 100px;
+}
+#back a img{
+    height: 50px;
+    width: 50px;
+    float: right;
+    margin-right: 100px;
+}
+#footer{
+    display: flex;
+    height : 80px;
+    background-color: black;
+    color: aliceblue;
+    justify-content: center;
+    align-items: center;
+}

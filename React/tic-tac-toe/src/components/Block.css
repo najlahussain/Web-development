@@ -1,0 +1,12 @@
+.block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    height:100px;
+    width:100px;
+    cursor: pointer;
+    font-size: large;
+    background-color: rgb(195, 235, 235);
+    font-weight: bold;
+}

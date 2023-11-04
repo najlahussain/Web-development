@@ -1,0 +1,71 @@
+#contactSection {
+    height: 600px;
+}
+#contactSection::before{
+    content: "";
+    background: center / cover no-repeat url("../static/contact_bg.jpeg");/*cover means cover the whole section*/
+    position: absolute;
+    top: 0px; 
+    right: 0px; 
+    bottom: 0px; 
+    left: 0px; 
+    z-index: -1;
+    opacity: 0.9;
+    height: 750px;
+}
+#contactSection h3{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    margin-top: 50px;
+}
+#contact{
+    display: inline;
+    width: max-content;
+}
+#info{
+    float: left;
+    margin-left: 150px;
+    margin-top: -10px;
+    border: 2px solid black;
+    background-color: rgb(235, 234, 234)
+    ;
+    padding: 15px;
+    border-radius: 5px;
+}
+#contactSection img{
+    height: 100px;
+    width: 100px;
+}
+#contactSection p{
+    text-align: left;
+    font-weight: bold;
+}
+#map{
+    /* border: 2px solid black; */
+    width: max-content;
+    
+    margin-top: 5px;
+    padding: 0px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#contactSection input,textarea,button {
+    width: 56%;
+    margin: 8px;
+    margin-left: 0px;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+button{
+    background-color: black;
+    color : white;
+}
